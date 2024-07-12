@@ -3,38 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/client/style.css">
-    <link rel="stylesheet" href="css/client/reset.css">
-    <link rel="stylesheet" href="css/client/responsive.css">
+    <title><%= title %></title>
+
+    <!-- Custom Css -->
+        <link rel="stylesheet" href="css/client/style.css">
+        <link rel="stylesheet" href="css/client/reset.css">
+        <link rel="stylesheet" href="css/client/responsive.css">
+    <!-- Custom Css -->
+
+    <!-- Font Awesome CND -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CND -->
+
+    <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Google Font -->
 </head>
 <body>
-    <header class="header">
-        <div class="container header__item">
-            <div class="header__left">
-                <div class="heaedr__logo">
-                    <div class="header__logo__img">
-
-                    </div>
-                </div>
-            </div>
-            <div class="header__right">
-                <div class="header__menu">
-                    <ul class="header__menu__list">
-                        <li>
-                            <a href="">Trang chủ</a>
-                        </li>
-                        <li>
-                            <a href="">Bài viết</a>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                        </li>
-                        <li>
-                            <a href="">Trang chủ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+   <!-- navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <a href="/" class="side__brand">
+                Trip <span>Boss</span>
+            </a>
+            <button type="button" id="nav-show-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="nav-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog" class="nav-link">Cẩm nang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about" class="nav-link">Về chúng tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-link">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact" class="nav-link">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/auth" class="nav-link">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>  
         </div>
-    </header>
+    </div>
+   <!-- navbar -->
