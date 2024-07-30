@@ -149,7 +149,7 @@
         min-height: 100vh;
         padding-top: 7rem;
         background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url(../../imgs/client/header-bg.jpg) center/cover no-repeat;
+        url(../../imgs/client/header-bg.png) center/cover no-repeat;
         flex-direction: column;
         color: #ffffff;
         text-align: center;
@@ -262,7 +262,7 @@
 \*-----------------------------------*/
     #services{
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-        url(../../imgs/client/services-bg.jpg) center/cover no-repeat;
+        url(../../imgs/client/services-bg.png) center/cover no-repeat;
     }
 
     #services *{
